@@ -11,8 +11,9 @@ class Bot:
         mfp = MotionFromMap(m1)
         # position initiale
         position = [0, 0]
-        # matrice contenant la carte
+        # matrice contenant la carte (premiere case de première ligne à positif)
         mapresult = [[1]]
+        # Tant que la map n'est pas rempli
         while numpy.shape(mapresult) != (66, 66):
             # initialisation rotate
             rotate = 0
