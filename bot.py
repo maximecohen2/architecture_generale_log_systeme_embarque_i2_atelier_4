@@ -61,7 +61,7 @@ class Bot:
             return mapresult, position
         # Sinon, mouvement invalide
         else:
-             print("C'est faux")
+            print("C'est faux")
             # initie une valeur pour une rotation
             rotate = random.randint(1, 4)
             print("rotation dans c'est faux :  " + str(rotate))
@@ -76,4 +76,4 @@ class Bot:
                 position[0] -= 1
             # appel de la récurvise pour retenter le mouvement avec les nouvelles valeurs
             self.rec(mfp, position, rotate, mapresult)
-
+            return mapresult, position
